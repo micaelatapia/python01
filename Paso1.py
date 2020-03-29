@@ -6,3 +6,4 @@ a = 2 + 2;
 print(a);
 saludo = int(input("Ingresar saludo"))
 
+
