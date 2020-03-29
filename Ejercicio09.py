@@ -36,7 +36,7 @@ puntoA = direccion
 while cantidadEmpanadas != 0:
 
     if tipoEmpanada == 1 and cantidadEmpanadas > 15:
-        acumDireccion = acumDireccion + direccion
+        acumDireccion = acumDireccion + " / " + direccion
 
     if tipoEmpanada == 1:
         acumHorno = acumHorno + cantidadEmpanadas
