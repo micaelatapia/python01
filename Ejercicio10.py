@@ -21,30 +21,43 @@ acumArt2 = 0
 acumArt3 = 0
 acumPrecio = 0
 
+inversion1 = 0
+inversion2 = 0
+inversion3 = 0
+
 tipoDeArt = int(input("Ingresar tipo de articulo: "))
 precioUnitario = int(input("Ingresar precio unitario: "))
 nombreArt = input("Ingresar nombre del articulo: ")
 cantidadStock = int(input("Ingresar cantidad de stock: "))
 minimo = precioUnitario
+nombreJuguete = ""
 
 while precioUnitario != 0:
     if tipoDeArt == 1:
-        acumArt1 = acumArt1 + tipoDeArt
+        acumArt1 = acumArt1 + cantidadStock
+        inversion1 = cantidadStock * precioUnitario
     if tipoDeArt == 2:
-        acumArt2 = acumArt2 + tipoDeArt
+        acumArt2 = acumArt2 + cantidadStock
+        inversion2 = cantidadStock * precioUnitario
     if tipoDeArt == 3:
-        acumArt3 = acumArt3 + tipoDeArt
-    if nombreArt == nombreArt:
+        acumArt3 = acumArt3 + cantidadStock
+        inversion3 = cantidadStock * precioUnitario
+
+    if tipoDeArt == 3:
+
         if precioUnitario < minimo:
             minimo = precioUnitario
-            print("Juguete mas barato: ", nombreArt)
+        if minimo == precioUnitario:
+            nombreJuguete = nombreArt
 
-    inversion = cantidadStock * precioUnitario
+    inversionTotal = inversion1 + inversion2 + inversion3
+
     tipoDeArt = int(input("Ingresar tipo de articulo: "))
     precioUnitario = int(input("Ingresar precio unitario: "))
-    nombreArt = input("Ingresar nombre del articulo: ")
-    cantidadStock = int(input("Ingresar cantidad de stock: "))
+    if precioUnitario != 0:
+        nombreArt = input("Ingresar nombre del articulo: ")
+        cantidadStock = int(input("Ingresar cantidad de stock: "))
 
-
-print("La cantidad de art de cada tipo: ", acumArt1, acumArt2, acumArt3)
-print("Dinero invertido: $", inversion)
+print("La cantidad de art de cada tipo: art.1:", acumArt1, "art.2:", acumArt2, "art.3:", acumArt3)
+print("Juguete mas barato:", nombreJuguete)
+print("Dinero invertido: $", inversionTotal)
