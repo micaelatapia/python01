@@ -13,6 +13,7 @@ El sistema debería mostrar:
 de horno
  d) Total recaudado(Cada cliente pide un solo tipo de empanada)"""
 
+
 acumEmpanadas = 0
 acumDireccion = " "
 
