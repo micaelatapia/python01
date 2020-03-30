@@ -20,7 +20,6 @@ acumArt1 = 0
 acumArt2 = 0
 acumArt3 = 0
 acumPrecio = 0
-
 inversion1 = 0
 inversion2 = 0
 inversion3 = 0
