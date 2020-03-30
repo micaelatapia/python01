@@ -90,7 +90,7 @@ while dia_del_mes != 31:
         if tipo_chocolate == 3:
             totalSumaPedro3 = cantidad_vendido * 30
         sumaTotalPedro = totalSumaPedro1 + totalSumaPedro2 + totalSumaPedro3
-        promedioPedro = (sumaTotalPedro - sumaTotalPablo) / sumaTotalPedro * 100
+        promedioPedro = (sumaTotalPedro + sumaTotalPablo) / sumaTotalPedro * 100
 
     if sumaTotalPedro > sumaTotalPablo:
         if nombre_vendedor > nomMayorFactura:
