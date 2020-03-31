@@ -81,13 +81,13 @@ while nroFactura != 0:
         minCodArt = codArticulo
 
     if codArticulo == 1:
-        totalFinalFactura1 = precioUnitario * acumTotal / 100
+        totalFinalFactura1 = precioUnitario / acumTotal * 100
     if codArticulo == 3:
-        totalFinalFactura3 = precioUnitario * acumTotal / 100
+        totalFinalFactura3 = precioUnitario / acumTotal * 100
     if codArticulo == 5:
-        totalFinalFactura5 = precioUnitario * acumTotal / 100
+        totalFinalFactura5 = precioUnitario / acumTotal * 100
     if codArticulo == 7:
-        totalFinalFactura7 = precioUnitario * acumTotal / 100
+        totalFinalFactura7 = precioUnitario / acumTotal * 100
 
     nroFactura = int(input("Ingresar numero de factura: "))
     if nroFactura != 0:
@@ -101,7 +101,7 @@ print("Cantidad vendida en unidades: art.1: ", acumArt1, "unidades. Art.3: ", ac
 print("Total de artículos vendidos: ", sumaArt, "unidades")
 print("Cantidad de facturas emitidas para cada uno de los artículos: art.1:",cont1, "art.3:", cont3, "art.5:",
       cont5, "art.7:", cont7)
-print("Nro. de factura con mayor valor ( en $ ):", maxNroFactura)
+print("Nro. de factura con mayor valor (en $):", maxNroFactura)
 print("Nro. de artículo con menor cantidad pedida:", minCodArt)
 print("Porcentaje de ventas (en pesos) de cada uno de los artículos sobre el total: art.1:", totalFinalFactura1,
       "%. art.3:", totalFinalFactura3, "%. art.5:", totalFinalFactura5, "%. art.7:", totalFinalFactura7, "%")
