@@ -13,7 +13,6 @@ El sistema debería mostrar:
 de horno
  d) Total recaudado(Cada cliente pide un solo tipo de empanada)"""
 
-
 acumEmpanadas = 0
 acumDireccion = " "
 
@@ -25,11 +24,9 @@ acumTotal1 = 0
 acumTotal2 = 0
 acumTotal3 = 0
 
-
-direccion = input("Ingrese direccion del cliente: ")
 cantidadEmpanadas = int(input("Cantidad de empanadas: "))
+direccion = input("Ingrese direccion del cliente: ")
 tipoEmpanada = int(input("Tipo de empanada: 1.horno 2.frita 3.dulce: "))
-
 
 maximo = cantidadEmpanadas
 puntoA = direccion
@@ -63,16 +60,14 @@ while cantidadEmpanadas != 0:
     if maximo == cantidadEmpanadas:
         puntoA = direccion
 
-    direccion = input("Ingrese direccion del cliente: ")
     cantidadEmpanadas = int(input("Cantidad de empanadas: "))
-    tipoEmpanada = int(input("Tipo de empanada: 1.horno 2.frita 3.dulce: "))
+    if cantidadEmpanadas != 0:
+        direccion = input("Ingrese direccion del cliente: ")
+        tipoEmpanada = int(input("Tipo de empanada: 1.horno 2.frita 3.dulce: "))
 
 print("Dirección del cliente que más empanadas compró: ", puntoA)
-
-print("Cantidad de empanadas vendidas de cada tipo: horno:", acumHorno,
-    "frita: ", acumFrita, "dulces: ", acumDulce)
-
+print("Cantidad de empanadas vendidas de cada tipo: horno:", acumHorno, "empanadas. Fritas:",
+      acumFrita, "empanadas. Dulces: ", acumDulce, "empanadas")
 print("La direccion de clientes que compraron mas de 15 empanadas al horno: ",
     acumDireccion)
-
 print("Total recaudado: $", acumTotal1 + acumTotal2 + acumTotal3)
