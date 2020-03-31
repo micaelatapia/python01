@@ -25,7 +25,6 @@ while cont < 5:
             cont = 0
             acum = 0
             op = int(input("Seleciones la operacion a realizar,1 o 2: "))
-
     while op == 2:
         nro = int(input("Ingresar numero: "))
         potencia = int(input("ingrese la potencia para elevar el número: "))
