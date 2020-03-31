@@ -26,40 +26,34 @@ acumCamion2 = 0
 acumCamion3 = 0
 contInterior = 0
 
+valor1 = 0
+valor2 = 0
+valor3 = 0
+
 nroViaje = int(input("Ingresar numero de viaje: "))
 nroCamion = int(input("Ingresar numero de camion 1, 2 o 3: "))
 horasTrabajadas = int(input("Ingresar horas trabajadas: "))
 destino = int(input("Ingresar destino, 1.capital o 2.interior: "))
 
-valor1 = horasTrabajadas * 150
-valor2 = horasTrabajadas * 200
-valor3 = horasTrabajadas * 300
-
 while nroViaje != 0:
+    contViajes = contViajes + 1
     acumRecaudado = acumRecaudado + horasTrabajadas
+
     if nroCamion == 1:
+        contCamion1 = contCamion1 + 1
+        acumCamion1 = acumCamion1 + horasTrabajadas
         valor1 = horasTrabajadas * 150
-        if nroCamion == 1:
-            contCamion1 = contCamion1 + 1
-            if nroCamion == 1:
-                acumCamion1 = acumCamion1 + horasTrabajadas
 
     if nroCamion == 2:
+        contCamion2 = contCamion2 + 1
+        acumCamion2 = acumCamion2 + horasTrabajadas
         valor2 = horasTrabajadas * 200
-        if nroCamion == 2:
-            contCamion2 = contCamion2 + 1
-            if nroCamion == 2:
-                acumCamion2 = acumCamion2 + horasTrabajadas
 
     if nroCamion == 3:
+        contCamion3 = contCamion3 + 1
+        acumCamion3 = acumCamion3 + horasTrabajadas
         valor3 = horasTrabajadas * 300
-        if nroCamion == 3:
-            contCamion3 = contCamion3 + 1
-            if nroCamion == 3:
-                acumCamion3 = acumCamion3 + horasTrabajadas
 
-    if nroViaje == nroViaje:
-        contViajes = contViajes + 1
     if destino == 2:
         contInterior = contInterior + 1
 
