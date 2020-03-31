@@ -125,5 +125,3 @@ print("Nro. de artículo con menor cantidad pedida:", minCodArt)
 print("Porcentaje de ventas (en pesos) de cada uno de los artículos sobre el total: art.1:",
       acumTotal1 / acumTotal * 100, "%. art.3:", acumTotal3 / acumTotal * 100, "%. art.5:",
       acumTotal5 / acumTotal * 100, "%. art.7:", acumTotal7 / acumTotal * 100, "%")
-
-"acumtotal = todos los productos"
