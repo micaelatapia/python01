@@ -16,7 +16,7 @@ acum_amargo = 0
 acum_dulce = 0
 acum_almendras = 0
 
-promedioPedro = 0
+cantidadVendidoTotal = 0
 
 dia_del_mes = int(input("Ingresar dia del mes del 1 al 30: "))
 nombre_vendedor = input("Quien es el vendedor, pedro o pablo: ")
@@ -45,8 +45,8 @@ nomMayorFactura = nombre_vendedor
 sumaTotalPablo = 0
 sumaTotalPedro = 0
 
-
 while dia_del_mes != 31:
+
     if cantidad_vendido > mayor_venta_kg:
         mayor_venta_kg = cantidad_vendido
 
@@ -72,6 +72,8 @@ while dia_del_mes != 31:
         acum_almendras = acum_almendras + cantidad_vendido
         totalSuma3 = acum_almendras * 30
 
+    cantidadVendidoTotal = totalSuma1 + totalSuma2 + totalSuma3
+
     if nombre_vendedor == "pablo":
         if tipo_chocolate == 1:
             totalSumaPablo1 = cantidad_vendido * 20
@@ -89,8 +91,8 @@ while dia_del_mes != 31:
             totalSumaPedro2 = cantidad_vendido * 25
         if tipo_chocolate == 3:
             totalSumaPedro3 = cantidad_vendido * 30
+
         sumaTotalPedro = totalSumaPedro1 + totalSumaPedro2 + totalSumaPedro3
-        promedioPedro = (sumaTotalPedro + sumaTotalPablo) / sumaTotalPedro * 100
 
     if sumaTotalPedro > sumaTotalPablo:
         if nombre_vendedor > nomMayorFactura:
@@ -100,7 +102,7 @@ while dia_del_mes != 31:
         if nombre_vendedor > nomMayorFactura:
             nomMayorFactura = nombre_vendedor
 
-    dia_del_mes = int(input("ingresar dia del mes del 1 al 30 :"))
+    dia_del_mes = int(input("ingresar dia del mes del 1 al 30 : "))
     if dia_del_mes != 31:
         nombre_vendedor = input("Quien es el vendedor, pedro o pablo: ")
         cantidad_vendido = int(input("Ingrese cantidad (kg) de chocolates vendidos: "))
@@ -112,4 +114,4 @@ print("La cantidad de kg vendidos del sabor amargo es de: ", acum_amargo, "kg")
 print("La cantidad de kg vendidos del sabor dulce es de: ", acum_dulce, "kg")
 print("La cantidad de kg vendidos del sabor almendras es de: ", acum_almendras, "kg")
 print("Facturo mas: ", nomMayorFactura)
-print("Porcentaje de ventas de Pedro en relacion al total: ", promedioPedro, "%")
+print("Porcentaje de ventas de Pedro en relacion al total: ", sumaTotalPedro / cantidadVendidoTotal * 100, "%")
