@@ -53,7 +53,7 @@ while categoria == 1 or categoria == 2 or categoria == 3:
 
 print("Total de sueldos que paga la empresa: $", acumSueldo)
 print("Cantidad de empleados que ganan más de $20000: ", contSueldo)
-print("Los empleados que ganan menos de 5000 y son categoria 1 son: ", cont5k)
+print("Cantidad de empleados que ganan menos de $5000 y cuya categoría sea 1: ", cont5k)
 print("Nombre del empleado que gana más y cuál es su sueldo: ", maxNombre,
 "y su sueldo es de: $", maximo)
 print("El total de sueldos: categoria 1: $", acumCategoria1,
