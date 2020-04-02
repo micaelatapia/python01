@@ -17,4 +17,4 @@ while NumeroSemana <= 4:
     GastoSemanal = int(input("Ingrese gasto semanal: "))
 
     if NumeroSemana < 5:
-         print("El gasto semanal es de: $", GastoSemanal * 7 / 100
+        print("El gasto semanal es de: $", GastoSemanal * 7 / 100)
