@@ -22,3 +22,4 @@ while cont <= 9:
         print("Siete(7)")
 
     nros = int(input("Ingrese 10 numeros mayores que 3 y menores que 8: "))
+
