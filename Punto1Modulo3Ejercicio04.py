@@ -29,12 +29,18 @@ totalP = curso1p + curso2p + curso3p + curso4p + curso5p
 
 while contA < 5:
     contA = contA + 1
-    acumA = acumA + ausentes
     ausentes = int(input("Ingresar ausentes de cada curso: "))
+    acumA = acumA + ausentes
 
-
+print(curso1p)
+print(totalP)
 print(acumA)
 print("Porcentaje de presentes en el curso 1:", curso1p / (totalP + acumA) * 100)
+print("Porcentaje de presentes en el curso 2:", curso2p / (totalP + acumA) * 100)
+print("Porcentaje de presentes en el curso 3:", curso3p / (totalP + acumA) * 100)
+print("Porcentaje de presentes en el curso 4:", curso4p / (totalP + acumA) * 100)
+print("Porcentaje de presentes en el curso 5:", curso5p / (totalP + acumA) * 100)
+
 
 
 
