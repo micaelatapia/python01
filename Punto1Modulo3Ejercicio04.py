@@ -33,7 +33,7 @@ while contA < 5:
     ausentes = int(input("Ingresar ausentes de cada curso: "))
 
 
-
+print(acumA)
 print("Porcentaje de presentes en el curso 1:", curso1p / (totalP + acumA) * 100)
 
 
