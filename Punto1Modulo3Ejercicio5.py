@@ -1,5 +1,4 @@
 """Leer el número de mes y mostrar cuantos días tiene ese mes(año actual)"""
-
 mes = int(input("Ingrese un mes: "))
 
 while mes <= 12 and mes >= 0:
